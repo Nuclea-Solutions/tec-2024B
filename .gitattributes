@@ -1,1 +1,2 @@
 assets/aerial-drone.mp4 filter=lfs diff=lfs merge=lfs -text
+assets/aerial-drone-pov.jpg filter=lfs diff=lfs merge=lfs -text
