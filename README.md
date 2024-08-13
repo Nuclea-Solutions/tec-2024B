@@ -12,3 +12,7 @@ Este repositorio contiene la información relacionada a visión computacional
 ## Recursos para Unity
 
 - [Cesium](https://cesium.com/learn/unity/): Para generacion de mapas
+
+## Ejemplos de Codigo
+
+- [OpenAI Vision](/examples/openai_vision)
