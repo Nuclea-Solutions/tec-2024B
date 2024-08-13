@@ -9,6 +9,10 @@ Este repositorio contiene la información relacionada a visión computacional
 - [YOLOv8](https://docs.ultralytics.com/modes/predict/#introduction)
 - [OpenAI Vision](https://platform.openai.com/docs/guides/vision)
 
+## Hugging Face
+
+En esta [plataforma](https://huggingface.co/) se pueden encontrar modelos pre-entrenados de NLP y CV
+
 ## Recursos para Unity
 
 - [Cesium](https://cesium.com/learn/unity/): Para generacion de mapas
