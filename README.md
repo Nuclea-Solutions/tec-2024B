@@ -2,6 +2,11 @@
 
 Este repositorio contiene la información relacionada a visión computacional
 
+## Necesario para correr los ejemplos
+
+- Python 3.11.4 (se recomienda usar pyenv para su instalacion)
+- [Git LFS](https://git-lfs.com/)
+
 ## Demos de los Modelos
 
 - [SAM2](https://sam2.metademolab.com/demo)
@@ -20,3 +25,4 @@ En esta [plataforma](https://huggingface.co/) se pueden encontrar modelos pre-en
 ## Ejemplos de Codigo
 
 - [OpenAI Vision](/examples/openai_vision)
+- [YOLOv8](/examples/yolov8)
