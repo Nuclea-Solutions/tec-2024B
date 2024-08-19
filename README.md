@@ -26,3 +26,4 @@ En esta [plataforma](https://huggingface.co/) se pueden encontrar modelos pre-en
 
 - [OpenAI Vision](/examples/openai_vision)
 - [YOLOv8](/examples/yolov8)
+- [SAM2](/examples/sam2)
