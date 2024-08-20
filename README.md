@@ -27,3 +27,9 @@ En esta [plataforma](https://huggingface.co/) se pueden encontrar modelos pre-en
 - [OpenAI Vision](/examples/openai_vision)
 - [YOLOv8](/examples/yolov8)
 - [SAM2](/examples/sam2)
+
+## Tutoriales
+
+Titulo | Visual Studio Code | Google Colab | Descripcion
+--------|-----------|------------|----------
+Fine Tuning | [Fine Tuning](/examples/fine-tuning/fine-tuning.ipynb) | [Fine Tuning](https://colab.research.google.com/drive/1DCUwO4SC7P_ZmSMbBbtSBdptt8SmI5iF) | Como hacerle fine tuning al modelo de YOLO
