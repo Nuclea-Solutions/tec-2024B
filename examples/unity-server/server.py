@@ -1,8 +1,11 @@
+from ultralytics import YOLO
 import socket
 import logging
 import cv2
 import numpy as np
 from threading import Thread, Event as ThreadEvent
+
+model = YOLO('yolov8s.pt')
 
 def clean_buffer(original_buffer):
     buffer = b''
@@ -79,10 +82,16 @@ def handle_socket_client(client_socket, addr):
         img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
 
         # For now, let's just display the received image
-        cv2.imshow('Received frame', img)
-        cv2.waitKey(1)
+        results = model.track(img, persist=True)
 
-        # client_socket.send('received'.encode())
+        annotated_frame = results[0].plot()
+
+        # display results
+        cv2.imshow('YOLOv8 Tracking', annotated_frame)
+
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
 
     client_socket.close()
     cv2.destroyAllWindows()
