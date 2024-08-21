@@ -25,7 +25,6 @@ def get_numeric_data(buffer):
     return numeric_buffer, left_bytes
 
 def handle_socket_client(client_socket, addr):
-    counter = 0
     logger = logging.getLogger("handle_socket_client")
     logger.info("connected to client: {}".format(addr))
 
@@ -34,14 +33,14 @@ def handle_socket_client(client_socket, addr):
         # +---------------------------------+-----------------+
         # | length of bytes to be received  | image bytes     |
         # +---------------------------------+-----------------+
+
         # receive the length of bytes to be received
         # we assumed the number of bytes at most will be in 7 bytes
-        # in practice, this number will be less than 7 bytes, probably 6 bytes
+        # in practice, this number will be less than 7 bytes, probably 6
         data = client_socket.recv(7)
         if not data:
             break
 
-        counter += 1
         # get the numeric data from the received bytes
         # telling us how many bytes we should expect
         # the rest of the buffer is part of the image bytes
